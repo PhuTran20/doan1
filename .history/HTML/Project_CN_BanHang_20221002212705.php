@@ -25,7 +25,7 @@
       <header id="header">
         <nav class="container">
           <div class="header_logo_main">
-            <a class="header_logo" href="Project_CN_BanHang.php"
+            <a class="header_logo" href="Project_CN_BanHang.html"
               ><img src="../PICTURE/Logo-1.png" alt="logo_hmk"
             /></a>
           </div>
@@ -95,9 +95,9 @@
               </button>
             </form>
 
-            <a href="../HTML/dangnhap.php" class="user js-btn-user" >
+            <button class="user js-btn-user" type="submit">
               <i class="fa-solid fa-user"></i>
-            </a>
+            </button>
             <a class="cart" href="#"
               ><i class="fa-solid fa-cart-shopping"></i>
               <ul class="cart_more">
@@ -511,7 +511,46 @@
     <div id="back-top">
       <i class="fa-solid fa-chevron-up"></i>
     </div>
-     
+    <div class="modal js-modal">    
+      <div class="modal-container">
+        <div class="model-close js-modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="modal-login">
+          <h3>ĐĂNG NHẬP</h3>
+        </div>
+        <div class="form-login">
+          <form action="../PHP/login_controller.php">
+            <div class="info-user">
+              <label for="input-account"
+                >Tên tài khoản hoặc địa chỉ email *</label
+              >
+              <input type="text" id="input-account" name="username"/>
+              <label for="input-password">Mật khẩu *</label>
+              <input type="password" id="input-password" name="password"/>
+              <?php
+            session_start();
+             $err=$_SESSION["err"]??"";
+             ?>
+            <small style="color:red"><?php echo $err;?></small>
+            </div>
+            <div class="remember">
+              <input type="checkbox" name="" id="cbx-remember_passowrd" />
+              <label for="cbx-remember_passowrd">Ghi nhớ mật khẩu</label>
+            </div>
+            <button type="submit">ĐĂNG NHẬP</button>
+            <div class="support-form">
+              <p>
+                <a href="dangki.php" class="forget-password"
+                  >Tạo tài khoản ngay</a
+                >
+              </p>
+              <p><a href="" class="forget-password">Quên mật khẩu?</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="

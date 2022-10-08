@@ -6,7 +6,7 @@ if(isset($_REQUEST['username']) AND !empty($_REQUEST['username']))
     $username=$_REQUEST['username'];
 }
 else{
-    return header("Location: ../HTML/dangnhap.php");
+    return header("Location: ../HTML/dangki.php");
 }
 
 if(isset($_REQUEST['password']) AND !empty($_REQUEST['password']))
@@ -14,7 +14,7 @@ if(isset($_REQUEST['password']) AND !empty($_REQUEST['password']))
     $password=$_REQUEST['password'];
 }
 else{
-    return  header("Location: ../HTML/dangnhap.php");
+    return  header("Location: ../HTML/dangki.php");
 }
 
  

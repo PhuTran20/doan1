@@ -25,7 +25,7 @@
       <header id="header">
         <nav class="container">
           <div class="header_logo_main">
-            <a class="header_logo" href="Project_CN_BanHang.php"
+            <a class="header_logo" href="Project_CN_BanHang.html"
               ><img src="../PICTURE/Logo-1.png" alt="logo_hmk"
             /></a>
           </div>

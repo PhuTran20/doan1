@@ -25,7 +25,7 @@
       <header id="header">
         <nav class="container">
           <div class="header_logo_main">
-            <a class="header_logo" href="Project_CN_BanHang.php"
+            <a class="header_logo" href="Project_CN_BanHang.html"
               ><img src="../PICTURE/Logo-1.png" alt="logo_hmk"
             /></a>
           </div>
@@ -95,9 +95,9 @@
               </button>
             </form>
 
-            <a href="../HTML/dangnhap.php" class="user js-btn-user" >
+            <button class="user js-btn-user" type="submit">
               <i class="fa-solid fa-user"></i>
-            </a>
+            </button>
             <a class="cart" href="#"
               ><i class="fa-solid fa-cart-shopping"></i>
               <ul class="cart_more">

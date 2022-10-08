@@ -31,7 +31,7 @@
             name="password"
             class="margin-top20"
           />
-          <input type="password" placeholder="Re-Password" class="margin-top20" />
+          <input type="text" placeholder="Re-Password" class="margin-top20" />
           <input
             type="email"
             placeholder="Email"

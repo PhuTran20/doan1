@@ -593,3 +593,7 @@ footer {
   background-color: #fff;
   color: #d38566;
 }
+
+.open {
+  display: flex;
+}

@@ -1,23 +1,9 @@
 <?php
 session_start();
 include_once('connect_database.php');
-if(isset($_REQUEST['username']) AND !empty($_REQUEST['username']))
-{
-    $username=$_REQUEST['username'];
-}
-else{
-    return header("Location: ../HTML/dangnhap.php");
-}
 
-if(isset($_REQUEST['password']) AND !empty($_REQUEST['password']))
-{
-    $password=$_REQUEST['password'];
-}
-else{
-    return  header("Location: ../HTML/dangnhap.php");
-}
-
- 
+$username=$_REQUEST['username'];
+$password=$_REQUEST['password'];
 
 $sql="SELECT * 
         FROM user WHERE username='$username' AND password='$password'
